@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Bonus puzzle</title>
+
+    <style>
+    body{
+        box-sizing: border-box;background-color: #EEE;
+    }
+    #container{
+        width: 600px;height: 600px;border: 1px solid #CCC;margin: 0 auto;background-color: #FFF;
+    }
+    #box-content {
+        position: relative;
+        position: relative;
+        top: 175px;
+        left: 140px;
+        transform: rotate(-45deg);
+    }
+    #rouge, #vert, #bleu{text-align: center;}
+    #rouge{width: 200px;height: 200px;background-color: #F00;}
+    #vert{width: 100px;height: 100px;background-color: #0F0;
+        position: relative;
+         z-index: 2;
+         top: 155px;
+         left: 458px;
+        
+    }
+    #bleu{width: 50px;height: 50px;background-color: #00F;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box-content">
+            <div id="bleu">BLEU</div>
+            <div id="rouge">ROUGE</div>
+        </div>
+        <div id="vert">VERT</div>
+    </div>
+</body>
+</html>
